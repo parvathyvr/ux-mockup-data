@@ -1,0 +1,9 @@
+Based on the understanding developed by the analytics engine we see that
+the function `AsyncClientHttpRequest` has been replaced by the function `ClientRequest`
+in org.springframework.boot:spring-boot-starter-web >= 5.5.
+
+# Do we include this? <HOLD>
+#Please see the javadoc of the same here to understand the migration: https://docs.spring.io/spring/docs/current/javadoc-api/org/springframework/web/reactive/function/client/ClientRequest.html,
+
+<optional, might be able to do this>
+As per analytics, the migration requires use of `ClientRequest.Builder` over `AsyncClientHttpRequestFactory` for request creation and `ClientRequest` over `AsyncClientHttpRequest`.

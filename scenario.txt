@@ -1,0 +1,7 @@
+Since the user has not specified a version for "spring-boot-starter-web" in the
+pom.xml, the version of that package which will be installed is the latest version
+of the package available on Maven central, however the application was written
+using an older version of the library that had the class "AsyncClientHttpRequest"
+present in the API, however the same was deprecated and has now been removed
+in favour of "ClientRequest" in SpringBoot 5.5(not a real version currently, highest in 5.1 where
+this function is still in deprecated state).
